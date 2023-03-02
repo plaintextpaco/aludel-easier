@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.10;
 
-import { Test } from "forge-std/Test.sol";
-import {PRBProxy } from "prb-proxy/PRBProxy.sol";
+import {Test} from "forge-std/Test.sol";
+import {PRBProxy} from "prb-proxy/PRBProxy.sol";
 import {PRBProxyFactory} from "prb-proxy/PRBProxyFactory.sol";
 import {ERC20} from "openzeppelin-contracts/token/ERC20/ERC20.sol";
 import {ZoraActions} from "../src/ZoraActions.sol";

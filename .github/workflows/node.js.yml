@@ -1,0 +1,22 @@
+name: Integration tests
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+jobs:
+  monolith:
+    runs-on: ubuntu-latest
+    env:
+      FOUNDRY_PROFILE: ci
+    steps:
+      - uses: actions/checkout@v2
+      - uses: foundry-rs/foundry-toolchain@v1
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install --dev
+      - run: npm run test
+      - run: npm run lint-solhint
+      - run: npm run lint-forge

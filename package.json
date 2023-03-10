@@ -1,0 +1,15 @@
+
+{
+  "scripts": {
+    "postinstall": "git submodule update --init --recursive && git submodule foreach npm install --legacy-peer-deps",
+    "lint-solhint": "git ls-files |grep '\\.sol$' | xargs ./node_modules/.bin/solhint",
+    "lint-forge": "forge fmt --check",
+    "fix-solhint": "git ls-files |grep '\\.sol$' | xargs ./node_modules/.bin/solhint --fix",
+    "fix-forge": "forge fmt",
+    "compile": "forge build",
+    "test": "forge test"
+  },
+  "devDependencies": {
+    "solhint": "^3.4.0"
+  }
+}

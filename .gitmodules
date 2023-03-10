@@ -2,3 +2,12 @@
 	path = lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
 	branch = v1.4.0
+[submodule "lib/faucets"]
+	path = lib/faucets
+	url = git@github.com:ourzora/faucets.git
+[submodule "lib/openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = git@github.com:OpenZeppelin/openzeppelin-contracts.git
+[submodule "lib/prb-proxy"]
+	path = lib/prb-proxy
+	url = git@github.com:PaulRBerg/prb-proxy.git

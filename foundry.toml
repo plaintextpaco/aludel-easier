@@ -2,5 +2,7 @@
 src = 'src'
 out = 'out'
 libs = ['lib']
+solc_version = "0.8.12"
+fs_permissions = [{ access = "read-write", path = "./foundry-deployments/"}]
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
